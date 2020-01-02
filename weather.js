@@ -4,8 +4,7 @@ const { OPENWEATHER_API_KEY } = process.env;
 
 const getWeatherInfo = city =>
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${'4b62212a7c3d8f875242e0fe492748c7'
-}`
+    `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${'4b62212a7c3d8f875242e0fe492748c7' }`
   )
     .then(response => response.json())
     .then(data => {
